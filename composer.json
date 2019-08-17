@@ -1,0 +1,10 @@
+{
+    "name": "matsu/phpapp",
+    "authors": [
+        {
+            "name": "Yuki Matsukura",
+            "email": "matsubokkuri@gmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -15,6 +15,7 @@ jobs:
             - "ad:bd:6e:90:c2:24:69:00:4f:8f:7e:93:a1:9b:57:9a"
       - run: echo "User matsubo" >> $HOME/.ssh/config
       - run: echo "ForwardAgent yes" >> $HOME/.ssh/config
+      - run: ssh-keyscan blog.teraren.com >> ~/.ssh/known_hosts
       - run: curl -sS https://getcomposer.org/installer | php
       - run: php composer.phar install
       - run: php vendor/bin/dep deploy test

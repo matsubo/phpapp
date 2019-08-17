@@ -4,10 +4,10 @@ namespace Deployer;
 require 'recipe/common.php';
 
 // Project name
-set('application', 'my_project');
+set('application', 'phpapp');
 
 // Project repository
-set('repository', '');
+set('repository', 'git@github.com:matsubo/phpapp.git');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true); 
@@ -21,10 +21,7 @@ set('writable_dirs', []);
 
 
 // Hosts
-
-host('project.com')
-    ->set('deploy_path', '~/{{application}}');    
-    
+inventory('./hosts.yml');
 
 // Tasks
 

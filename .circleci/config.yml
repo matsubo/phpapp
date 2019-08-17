@@ -12,7 +12,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "ad:bd:6e:90:c2:24:69:00:4f:8f:7e:93:a1:9b:57"
+            - "ad:bd:6e:90:c2:24:69:00:4f:8f:7e:93:a1:9b:57:9a"
       - run: echo "User matsubo" >> $HOME/.ssh/config
       - run: echo "ForwardAgent yes" >> $HOME/.ssh/config
       - run: curl -sS https://getcomposer.org/installer | php

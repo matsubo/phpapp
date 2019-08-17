@@ -6,5 +6,8 @@
             "email": "matsubokkuri@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "require-dev": {
+        "deployer/deployer": "^6.5"
+    }
 }

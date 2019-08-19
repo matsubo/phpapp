@@ -1,10 +1,5 @@
-# PHP CircleCI 2.0 configuration file
-#
-# Check https://circleci.com/docs/2.0/language-php/ for more details
-#
 version: 2
 jobs:
-  # deployer
   deploy-job:
     docker:
       - image: circleci/php:7.3.8
@@ -13,7 +8,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "ad:bd:6e:90:c2:24:69:00:4f:8f:7e:93:a1:9b:57:9a"
-      - run: echo "User matsubo" >> $HOME/.ssh/config
+      - run: echo "User matsu" >> $HOME/.ssh/config
       - run: echo "ForwardAgent yes" >> $HOME/.ssh/config
       - run: ssh-keyscan blog.teraren.com >> ~/.ssh/known_hosts
       - run: curl -sS https://getcomposer.org/installer | php

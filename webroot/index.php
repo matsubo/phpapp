@@ -1,5 +1,5 @@
 <?php
 
-print 'Hello, PHP ';
+print 'Hello hello, PHP ';
 print phpversion();
 
